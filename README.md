@@ -1,12 +1,12 @@
 # go-log-to-file
 Simple go module to print log entries to a file
 
-####Import module:
+#### Import module:
 ```go
 import "github.com/cavebird/go-log-to-file"
 ```
 
-####Initialize module:
+#### Initialize module:
   - Parameters:
     1. filename (string)  : Absolute path to filename to print the results to. Will be created if not exists. ".log" is appended.
     2. print    (bool)    : If true prints each entry to stdout after writing it
@@ -14,7 +14,7 @@ import "github.com/cavebird/go-log-to-file"
 LogToFile.Init("/my/path/myFileName", true)
 ```
 
-####Add entry to log:
+#### Add entry to log:
 - Parameters:
   1. log level    (string)  : Is printed first in the line. 
   2. log message  (string)  : Is printed last in the line.
@@ -28,7 +28,7 @@ LogToFile.Add("INFO", "test log message")
 LogToFile.WriteToFile()
 ```
 
-####Example
+#### Example
 ```go
 func main(){
     LogToFile.Init("myFile", true)
