@@ -23,7 +23,7 @@ LogToFile.Init("/my/path/myFileName", true)
 LogToFile.Add("INFO", "test log message")
 ```
 
-####Write to file
+#### Write to file
 ```go
 LogToFile.WriteToFile()
 ```
